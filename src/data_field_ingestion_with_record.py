@@ -8,9 +8,9 @@ def add_value_to_file(value, file):
 
 def main():
     with open('output/global_output.txt', 'wb') as file:
-        users = mockup_user_generator(3)
+        users = mockup_user_generator(500)
         for user in users:
-            add_value_to_file(f'{user['first_name']}|{user['last_name']}|{user['street_name']}|{user['street_number']}|{user['city']}|{user['state']}|{user['postcode']}|', file)
+            add_value_to_file(f"{user['first_name']}|{user['last_name']}|{user['street_name']}|{user['street_number']}|{user['city']}|{user['state']}|{user['postcode']}", file)
 
 if __name__ == "__main__":
     main()

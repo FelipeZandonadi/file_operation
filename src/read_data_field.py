@@ -13,7 +13,7 @@ def read_field(file):
         char = file.read(1)
     return field
 
-with open('src/output/global_output.txt', 'r', encoding='utf-8') as file:
+with open('output/global_output.txt', 'r', encoding='utf-8') as file:
     
     field = read_field(file)
     count = 0
